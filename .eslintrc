@@ -1,0 +1,24 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"rules": {
+		"semi": "off", // выключаем старндартное правило ;
+		"@typescript-eslint/semi": [ // испольузуем правило ; eslint
+			"warn" // и говорим, что при отсутствии ; показываем warning
+		],
+		"@typescript-eslint/no-empty-interface": [ // при создании пустого интерфейса на нас будет ругаться eslint 
+			"error",
+			{
+				"allowSingleExtends": true
+			}
+		]
+	},
+	"extends": [ // рекомендованные правила
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	]
+}
