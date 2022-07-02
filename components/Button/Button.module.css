@@ -1,6 +1,6 @@
 .button {
+    font-family: var(--font-family);
     display: inline-block;
-
     box-sizing: border-box;
     padding: 10px;
     cursor: pointer;
@@ -29,4 +29,14 @@
 .ghost:hover {
     color: var(--white);
     background-color: var(--primary);
+}
+
+.svgArrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.arrowDown {
+    transform: rotate(90deg);
+    transition: .2s ;
 }
