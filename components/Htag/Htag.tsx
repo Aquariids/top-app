@@ -1,4 +1,3 @@
-import * as React from "react";
 import styles from './Htag.module.css';
 import { HtagProps } from "./Htag.props";
 
