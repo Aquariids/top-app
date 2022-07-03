@@ -5,3 +5,5 @@ export interface ButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTML
     appearance: 'primary' | 'ghost';
     arrow?: 'right' | 'down' | 'none';
 }
+
+

@@ -5,6 +5,7 @@ import ArrowIcon from './arrow.svg';
 const { button, primary, ghost,svgarrow,arrowdown } = styles;
 
  const Button = ({ appearance, arrow = 'none', children, className, ...props }: ButtonProps): JSX.Element => {
+
   return (
     <button
       className={cn(button, className, {
