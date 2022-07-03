@@ -1,4 +1,4 @@
 import Htag from './Htag/Htag';
 import Button from './Button/Button';
-
-export {Htag,Button};
+import Paragraph from './Paragraph/Paragraph';
+export {Htag,Button,Paragraph};
