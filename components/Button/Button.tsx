@@ -1,7 +1,7 @@
 import styles from "./Button.module.css";
 import cn from "classnames";
 import { ButtonProps } from "./Button.props";
-import {ReactComponent as ArrowIcon} from './arrow.svg';
+import ArrowIcon from './arrow.svg';
 const { button, primary, ghost,svgarrow,arrowdown } = styles;
 
  const Button = ({ appearance, arrow = 'none', children, className, ...props }: ButtonProps): JSX.Element => {
