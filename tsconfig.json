@@ -22,9 +22,9 @@
   },
   "include": [
     "next-env-custom.d.ts",
+    "@types/image-types.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "@types/image-types.d.ts"
   ],
   "exclude": [
     "node_modules"
