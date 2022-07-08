@@ -20,7 +20,7 @@ const Rating = ({ isEditable = false, rating, setRating, ...props }: RatingProps
                         [editable]: isEditable,
                     })}
                     onMouseEnter={() => changeDisplay(i + 1)}
-                    onMouseLeave={() => changeDisplay(rating)}
+                    onMouseLeave={() => {changeDisplay(rating)}}
                     onClick={() => onClick(i + 1)}
 
                 >
@@ -48,6 +48,7 @@ const Rating = ({ isEditable = false, rating, setRating, ...props }: RatingProps
         }
         setRating(i);
     };
+
     const handleSpace = (i: number, e: KeyboardEvent<SVGAElement>) => {
         if (e.code != 'Space' || !setRating) {
             return;
