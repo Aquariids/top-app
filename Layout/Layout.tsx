@@ -2,22 +2,22 @@ import { LayoutProps } from "./Layout-props";
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Sidebar from "./Sidebar/Sidebar";
-import { Component, FunctionComponent } from "react";
+import styles from './Layout.module.css';
+import { FunctionComponent } from "react";
 
+const {wrapper,header,sidebar,body,footer} = styles;
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
 
     return (
-        <>
-            <Header />
-            <div>
-                <Sidebar />
-                <div>
-                    {children}
-                </div>
+        <div className={wrapper}>
+            <Header className={header} />
+            <Sidebar className={sidebar} />
+            <div className={body}>
+                {children}
             </div>
-            <Footer />
-        </>
+            <Footer className={footer} />
+        </div>
     );
 };
 
