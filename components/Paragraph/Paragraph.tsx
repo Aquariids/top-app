@@ -10,7 +10,6 @@ const Paragraph = ({textSize = 'm',children,className,...props }:ParagraphProps)
             [s]: textSize === 's',
             [m]: textSize === 'm',
             [l]: textSize === 'l',
-
         })}
         {...props}
         >

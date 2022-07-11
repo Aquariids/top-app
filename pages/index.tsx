@@ -1,12 +1,22 @@
-import React from "react";
-import {Htag,Button,Paragraph} from "../components";
-export default function Home():JSX.Element {
+import React, { useEffect, useState } from "react";
+import {Htag,Button,Paragraph, Tag, Rating} from "../components";
+import { withLayout } from "../Layout/Layout";
+function Home():JSX.Element {
+
+const [rating,setRating] = useState<number>(4);
+ 
+  
   return (
     <>
       <Htag tag="h3">Привет</Htag>
-      <Button appearance="primary" arrow='down' >Нажми ебло</Button>
-      <Button appearance="ghost" arrow="right">Нажми ебло</Button>
-      <Paragraph textSize="l" className="hi">Привет еблан</Paragraph>
+      <Button appearance="primary" arrow='down' >Нажми бобо</Button>
+      <Button appearance="ghost" arrow="right">Нажми а</Button>
+      <Paragraph textSize="l" className="hi">Привет ты не дурак</Paragraph>
+      <Tag textSize="s" color="green">Привет</Tag>
+      <Rating rating={rating} isEditable setRating={setRating}/>
     </>
   );
 }
+
+
+export default withLayout(Home);
