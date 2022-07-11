@@ -8,9 +8,9 @@ const Footer = ({ className,...props}: FooterProps): JSX.Element => {
 
     return (
         <div className={cn(className, footer)} {...props}>
-            <span>OwlTop © 2020 - {format(new Date(),'yyyy')} Все права защищены</span>
-            <span>Пользовательское соглашение</span>
-            <span>Политика конфиденциальности</span>
+            <div>OwlTop © 2020 - {format(new Date(),'yyyy')} Все права защищены</div>
+            <a href="#" target="_blank">Пользовательское соглашение</a>
+            <a href="#" target="_blank">Политика конфиденциальности</a>
         </div>
     );
 }; 
